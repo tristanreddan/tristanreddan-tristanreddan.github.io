@@ -444,6 +444,18 @@
     .metric-dot { display: none; }
     .metric-pill { padding: 0 0.5rem; width: 45%; }
   }
+
+  /* ── UPCOMING EVENT TILE ── */
+  .event-tile-bar { background: var(--cream); border-bottom: 1px solid var(--border); padding: 0.9rem 2rem; }
+  .event-tile-inner { max-width: 880px; margin: 0 auto; display: flex; align-items: center; gap: 1.25rem; flex-wrap: wrap; }
+  .event-tile-icon { flex-shrink: 0; }
+  .event-tile-text { flex: 1; min-width: 200px; }
+  .event-tile-pill { display: inline-block; font-size: 9px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 3px 9px; border-radius: 2px; background: var(--maroon); color: white; margin-bottom: 4px; }
+  .event-tile-title { font-size: 14px; font-weight: 600; color: var(--navy); letter-spacing: 0.01em; line-height: 1.3; margin-bottom: 2px; }
+  .event-tile-sub { font-size: 11px; color: var(--text-muted); letter-spacing: 0.03em; }
+  .event-tile-cta { display: inline-flex; align-items: center; font-size: 11px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; padding: 9px 18px; border-radius: 3px; text-decoration: none; background: var(--navy); color: white; white-space: nowrap; transition: background 0.2s; flex-shrink: 0; }
+  .event-tile-cta:hover { background: var(--maroon); }
+  @media (max-width: 600px) { .event-tile-cta { width: 100%; justify-content: center; } }
 </style>
 </head>
 <body>
@@ -534,6 +546,25 @@
   <div class="country-inner">
     <div class="country-dot"></div>
     <p class="country-text">I live and work on the lands of the <strong>Turrbal and Jagera peoples</strong> of Meanjin (Brisbane), and acknowledge their continuing custodianship of Country. I pay my respects to Elders past, present, and emerging, and recognise the deep connection of Aboriginal and Torres Strait Islander peoples to land, waters, and community across Queensland and beyond.</p>
+  </div>
+</div>
+
+<!-- UPCOMING EVENT TILE -->
+<div class="event-tile-bar">
+  <div class="event-tile-inner">
+    <div class="event-tile-icon">
+      <svg width="28" height="28" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <rect width="100" height="100" rx="6" fill="#cc0000"/>
+        <text x="50" y="44" font-family="Arial,sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="white">Canon</text>
+        <text x="50" y="66" font-family="Arial,sans-serif" font-size="14" text-anchor="middle" fill="rgba(255,255,255,0.75)">MEDICAL</text>
+      </svg>
+    </div>
+    <div class="event-tile-text">
+      <span class="event-tile-pill">Upcoming webinar</span>
+      <p class="event-tile-title">Paediatric Acute Abdomen: Ultrasound Insights into Appendicitis Examination</p>
+      <p class="event-tile-sub">Canon Medical ANZ &middot; Online &middot; Tue 20 October 2026, 6:30&ndash;7:50 pm AEST</p>
+    </div>
+    <a href="https://www.linkedin.com/events/paediatricacuteabdomen-ultrasou7498910331088375809/" target="_blank" rel="noopener" class="event-tile-cta">Register on LinkedIn &#8599;</a>
   </div>
 </div>
 
